@@ -14,12 +14,13 @@
         <div class="logo"></div>
     </header>
 
-    <section id="main">
-        <div class="container">
-            <h1>Lorem Ipsum</h1>
-            <article id="main-col">
+    <main>
+        <h1>Lorem Ipsum</h1>
+        <section>
+            <article>
                 <h3>About</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea vel quo quae itaque natus
+                <div class="txt-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea vel quo quae itaque
+                    natus
                     temporibus?
                     Sequi,
                     vitae vel! Eaque sed dicta est aliquam quod, minus, maxime omnis beatae asperiores officia
@@ -33,52 +34,65 @@
                     corporis nulla nam sunt! Quos quisquam harum quia, facere rerum ea minima laudantium praesentium
                     atque
                     in modi ducimus odio eum quas illo voluptatem enim nesciunt, dignissimos impedit placeat. Animi!
-                </p>
+                </div>
             </article>
 
-            <aside id="sidebar">
+            <aside>
                 <h3>Contact</h3>
                 <div class="contact">
-                    <div class="contact-avatar"></div>
+                    <img src="assets/gosling.jpg" alt="avatar">
                     <div class="contact-content">
                         <span>Ivan Ivanov</span>
-                        <span><a href="#">ivan@mail.ru</a></span>
+                        <br>
+                        <span><a href="#">ivan@mail.ru</a>
+                        </span>
                     </div>
                 </div>
                 <div class="follow-us">
                     <h3>Follow Us</h3>
                     <div>
-                        <i></i><a href="#">lorem.com</a>
-                        <i></i><a href="#">linkedin.com/lorem</a>
+                        <i class="icon-web"></i>
+                        <a href="#">lorem.com</a>
+                    </div>
+                    <div>
+                        <i class="icon-linkedin"></i>
+                        <a href="#">linkedin.com/lorem</a>
                     </div>
                 </div>
             </aside>
-
-            <div class="area-of-focus">
-                <h3>Area of Focus</h3>
-                <div class="areas">
-                    <div class="area">
-                        <i class="economy"></i>
-                        <h4>Economy, Politics & Environment</h4>
-                    </div>
-                    <div class="area">
-                        <i class="health"></i>
-                        <h4>Health & Culture</h4>
-                    </div>
-                    <div class="area">
-                        <i class="public"></i>
-                        <h4>Public Administration & Non-Profit</h4>
-                    </div>
+        </section>
+        <section>
+            <h3>Area of Focus</h3>
+            <article>
+                <div class="area">
+                    <span class="economy">
+                        <i></i>
+                    </span>
+                    <span>Economy, Politics & Environment</span>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="area">
+                    <span class="health">
+                        <i></i>
+                    </span>
+                    <span>Health & Culture</span>
+                </div>
+                <div class="area">
+                    <span class="public">
+                        <i></i>
+                    </span>
+                    <span>Public Administration & Non-Profit</span>
+                </div>
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
+        <section>
             <article class="footer-content-top">
                 <h1>Lorem of Lorem Ipsum</h1>
-                <input type="text" placeholder="search">
+                <label>
+                    <input type="text" placeholder="Search">
+                </label>
             </article>
 
             <article class="footer-content-bottom">
@@ -86,47 +100,61 @@
                     <div class="card-content">
                         <div>
                             <i class="item-logo"></i>
-                            <h2>Lorem upsum Dolor</h2>
+                            <span class="card-header">Lorem upsum Dolor</span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos veniam dicta.</p>
-                        <button class="btn-small">Open</button>
-                        <p>Lorem</p>
-                        <p>No fees & no time restrictions</p>
-                        <button class="btn-big">View details...</button>
+                        <button class="btn-small">Public</button>
+                        <div class="bottom-heading">
+                            <span class="txt-big">Lorem</span>
+                            <span class="txt-small">No fees & no time restrictions</span>
+                        </div>
+                        <button class="btn-big">View Details...</button>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
                         <div>
                             <i class="item-logo"></i>
-                            <h2>Lorem upsum Dolor</h2>
+                            <span class="card-header">Lorem upsum Dolor</span>
                         </div>
-                        <p>Lorem by <b>Loremupsum dolor</b></p>
+                        <p>Lorem by
+                            <span class="txt-gray">
+                                <b>Lorem upsum Dolor</b>
+                            </span>
+                        </p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos veniam dicta.</p>
                         <p><b>Format: </b>csv</p>
-                        <button class="btn-small">Open</button>
-                        <p>Lorem</p>
-                        <p>No fees & no time restrictions</p>
-                        <button class="btn-big">View details...</button>
+                        <button class="btn-small">Public</button>
+                        <div class="bottom-heading">
+                            <span class="txt-big">Lorem</span>
+                            <span class="txt-small">No fees & no time restrictions</span>
+                        </div>
+                        <button class="btn-big">View Details...</button>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
                         <div>
                             <i class="item-logo"></i>
-                            <h2>Lorem upsum Dolor</h2>
+                            <span class="card-header">Lorem upsum Dolor</span>
                         </div>
-                        <p>Lorem by <b>Loremupsum dolor</b></p>
+                        <p>Lorem by
+                            <span class="txt-gray">
+                                <b>Lorem upsum dolor</b>
+                            </span>
+                        </p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos veniam dicta.</p>
                         <p><b>Format: </b>csv</p>
                         <button class="btn-small">Open</button>
-                        <p>Lorem</p>
-                        <p>No fees & no time restrictions</p>
-                        <button class="btn-big">View details...</button>
+                        <div class="bottom-heading">
+                            <span class="txt-big">Lorem</span>
+                            <span class="txt-small">No fees & no time restrictions</span>
+                        </div>
+                        <button class="btn-big">View Details...</button>
                     </div>
                 </div>
             </article>
-        </div>
+        </section>
     </footer>
 </body>
 

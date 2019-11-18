@@ -4,6 +4,13 @@ body {
     font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+    color: #009DF2;
+    padding-top: 6px;
+}
+
+/* HEADER */
 header {
     background: url("assets/background-image.jpg") right 50% bottom 60%/cover;
     height: 200px;
@@ -17,24 +24,226 @@ header {
     border-radius: 50%;
     position: absolute;
     top: 65%;
-    left: 440px;
+    left: 24%;
 }
 
-.container {
-    width: 984px;
-    margin: auto;
+/* MAIN */
+main, footer section {
+    width: 60%;
+    max-width: 984px;
+    margin: 120px auto;
 }
 
-#main-col {
-    float: left;
-    width: 65%;
+main section:first-of-type {
+    display: flex;
 }
 
-#sidebar {
-    float: right;
-    width: 30%;
+main section:first-of-type article {
+    flex: 0 0 65%;
+    margin-right: 24px;
 }
 
-.area-of-focus {
+aside {
+    flex: 0 0 30%;
+}
+
+.contact, .follow-us div {
+    display: flex;
+}
+
+.contact img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.follow-us h3 {
+    margin: 36px 0 8px 0;
+}
+
+.follow-us i {
     display: block;
+    height: 24px;
+    width: 24px;
+    margin-right: 6px;
+}
+
+.icon-web {
+    background: url("assets/web.svg");
+}
+
+.icon-linkedin {
+    background: url("assets/in.svg") no-repeat;
+}
+
+section:nth-of-type(2) {
+    margin-top: 56px;
+}
+
+section:nth-of-type(2) article {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.area {
+    height: 24px;
+    width: fit-content;
+    background: #DCDCDC;
+    display: flex;
+    margin-right: 12px;
+}
+
+.area span:first-child {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.area span:last-child {
+    display: block;
+    padding: 3px 12px;
+}
+
+.area:last-child {
+    margin-top: 12px;
+}
+
+.area i {
+    display: block;
+    height: 18px;
+    width: 18px;
+    margin: 3px 3px 2px;
+}
+
+.economy {
+    background: #5A4D99;
+}
+
+.economy i {
+    background: url("assets/internet.svg");
+}
+
+.health {
+    background: #BFCC36;
+}
+
+.health i {
+    background: url("assets/culture.svg");
+}
+
+.public {
+    background: #1A587A;
+}
+
+.public i {
+    background: url("assets/handshake.svg");
+}
+
+footer {
+    background: #DCDCDC;
+    padding: 18px 0;
+}
+
+.footer-content-top, .footer-content-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content-top {
+    align-items: center;
+}
+
+.footer-content-top h1 {
+    font-size: 36px;
+}
+
+label {
+    position: relative;
+}
+  
+label:before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 18px;
+    background: url("assets/search.svg") center / contain no-repeat;
+}
+  
+input {
+    padding: 8px 190px 8px 28px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+}
+
+.card {
+    flex: 0 0 32%;
+    background: #ffffff;
+}
+
+.footer-content-bottom .card .card-content {
+    margin: 12px;
+}
+
+.footer-content-bottom .card .card-content div {
+    display: flex;
+}
+
+.card-header {
+    font-size: 24px;
+    padding: 3px 18px 18px 12px;
+}
+
+.footer-content-bottom .card .card-content p {
+    font-size: 18px;
+}
+
+.footer-content-bottom .card .card-content .item-logo {
+    display: block;
+    background: url("assets/item-logo.png") right/cover;
+    height: 80px;
+    width: 80px;
+}
+
+.btn-small {
+    display: block;
+    background: #ffffff;
+    color: #009DF2;
+    font-weight: bold;
+    border: 1px solid #009DF2;
+    border-radius: 5px;
+}
+
+.btn-big {
+    display: block;
+    background: #FFA500;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.bottom-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.txt-big {
+    font-size: 36px;
+}
+
+.txt-small {
+    font-size: 12px;
+}
+
+.txt-gray {
+    color: #757575;
 }
